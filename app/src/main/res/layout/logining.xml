@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical"
+	android:id="@+id/loginingLinearLayout01" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:layout_weight="1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:orientation="vertical" android:id="@+id/loginingLinearLayout03"
+		android:layout_width="fill_parent" android:background="@drawable/default_bg"
+		android:layout_height="fill_parent">
+		<ImageView android:layout_gravity="center_horizontal"
+			android:id="@+id/logining_anim_imgview" android:background="@drawable/logining_anim"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"  
+			android:layout_marginTop="90px"/>
+		<TextView android:layout_gravity="center_horizontal"
+			android:id="@+id/logining_tip_textview" android:focusable="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginTop="16.0dip" android:text="..." />
+	</LinearLayout>
+</LinearLayout>

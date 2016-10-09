@@ -1,0 +1,197 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gystudio.base"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+    <application
+        android:name="com.gystudio.utils.ContextUtil"
+        android:icon="@drawable/d_ico_asset"
+        android:label="@string/app_name"
+        android:theme="@style/ThemeDefault" >
+        <activity
+            android:name=".activity.Splash"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- 登录 -->
+        <activity android:label="@string/app_name" android:name=".activity.Login" android:configChanges="keyboardHidden|orientation" android:alwaysRetainTaskState="true" android:windowSoftInputMode="adjustPan"  android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name=".activity.Logining" android:configChanges="keyboardHidden|orientation" android:alwaysRetainTaskState="true"  android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <!-- 程序设置 -->
+        <activity android:label="@string/app_name" android:name="com.gystudio.utils.AppSettings"  android:configChanges="keyboardHidden|orientation" android:alwaysRetainTaskState="true" android:windowSoftInputMode="adjustPan" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <!-- 主界面 -->
+        <activity android:label="@string/app_name" android:name=".activity.Main"  android:configChanges="keyboardHidden|orientation" android:alwaysRetainTaskState="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 自动更新 -->
+        <activity android:label="@string/app_name" android:name="com.gystudio.service.AutoUpdate" android:configChanges="keyboardHidden|orientation" android:alwaysRetainTaskState="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.service.AutoUpdate" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 帮助-->
+        <activity android:label="系统帮助" android:name=".activity.Help" android:configChanges="keyboardHidden|orientation" android:alwaysRetainTaskState="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.Help" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 拍照上传-->
+        <activity android:label="拍照上传" android:name="com.gystudio.base.activity.assetphoto.AssetPhotoUploadActivity" android:configChanges="keyboardHidden|orientation" android:alwaysRetainTaskState="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.assetphoto.AssetPhotoUploadActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:label="查看图片" android:name="com.gystudio.base.activity.assetphoto.PhotoViewerActivity" android:configChanges="keyboardHidden|orientation" android:alwaysRetainTaskState="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.assetphoto.PhotoViewerActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 资产盘点 -->
+        <activity android:label="@string/app_name" android:name=".activity.AssetInventory" android:configChanges="keyboardHidden|orientation"  android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.AssetInventory" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 离线资产盘点 -->
+        <activity android:label="@string/app_name" android:name=".activity.AssetOffLineInventory" android:configChanges="keyboardHidden|orientation"  android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.AssetOffLineInventory" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 离线盘点数据管理 -->
+        <activity android:label="@string/app_name" android:name=".activity.OffLineDataManager" android:configChanges="keyboardHidden|orientation"  android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.OffLineDataManager" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 离线资产数据管理 -->
+        <activity android:label="@string/app_name" android:name=".activity.OffLineQtyDataManager" android:configChanges="keyboardHidden|orientation"  android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.OffLineQtyDataManager" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 手工录入 -->
+        <activity android:label="@string/app_name" android:name=".activity.AssetManual" android:configChanges="keyboardHidden|orientation"   android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.AssetManual" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".activity.InventoryChgSel" android:configChanges="keyboardHidden|orientation"   android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.InventoryChgSel" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 资产查询 -->
+        <activity android:label="@string/app_name" android:name=".activity.AssetSearch" android:configChanges="keyboardHidden|orientation"  android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.AssetSearch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".activity.AssetSearchList" android:configChanges="keyboardHidden|orientation"  android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.AssetSearchList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 盘点情况查询 -->
+        <activity android:label="@string/app_name" android:name=".activity.InventorySearch" android:configChanges="keyboardHidden|orientation"  android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.InventorySearch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".activity.InventorySearchList" android:configChanges="keyboardHidden|orientation"  android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.InventorySearchList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:label="@string/app_name" android:name=".activity.AssetQRShow" android:configChanges="keyboardHidden|orientation"  android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.AssetQRShow" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 二维，条码 扫描-->
+        <activity android:label="@string/app_name" android:name="com.gystudio.zxing.CaptureActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.gystudio.zxing.CaptureActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 拍照-->
+        <activity android:label="@string/app_name" android:name="com.gystudio.base.activity.assetphoto.CamreaPictureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.gystudio.base.activity.assetphoto.CamreaPictureActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 百度定位服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.6"></action>
+            </intent-filter>
+        </service>
+    </application>
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <!-- 百度定位服务权限 -->
+        <permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></permission>
+        <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission>
+
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+        <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+</manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/qq_dialog_root"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:gravity="center_vertical"
+		android:id="@+id/qqdialog_top_pane" android:background="@drawable/qqdialog_bg_top"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<ImageView android:id="@+id/qq_dialog_icon"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/qq_dialog_default_icon" />
+		<TextView android:textColor="@android:color/black"
+			android:id="@+id/qq_dialog_title" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="提示" />
+	</LinearLayout>
+	<LinearLayout android:id="@+id/qq_dialog_bottom_viewgroup"
+		android:background="@drawable/qqdialog_bg_bottom"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<RelativeLayout android:id="@+id/RelativeLayout01"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<TextView android:textColor="#ffffffff" android:id="@+id/qq_dialog_msg_id"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="20.0dip" android:layout_marginTop="18.0dip"
+				 android:text="" /> 
+                   <TextView
+                       android:id="@+id/star_label"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/qq_dialog_msg_id"
+                       android:layout_marginLeft="20.0dip"
+                       android:text="@string/asset_star_label" 
+                        android:visibility="invisible"
+                       android:textColor="#ffffffff" /> 
+		         <RatingBar
+			        android:id="@+id/room_ratingbar"
+			        style="@style/roomRatingBarMini"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			         android:numStars="5"  
+			         android:isIndicator="true"
+			         android:rating="0"
+			          android:visibility="invisible"
+			         android:layout_alignBottom="@+id/star_label"
+			         android:layout_toRightOf="@+id/star_label" 
+			         android:layout_marginLeft="10.0dip" >
+			    </RatingBar> 
+			<LinearLayout android:gravity="center" android:id="@+id/btn_pane"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="18.0dip"
+				android:layout_below="@id/room_ratingbar">
+				<Button android:id="@+id/qq_dialog_ok_btn_id"
+					android:layout_width="130.0px" android:layout_height="48.0dip"
+					android:text="" android:layout_weight="1.0" />
+				<Button android:id="@+id/qq_dialog_cancel_btn_id"
+					android:layout_width="130.0px" android:layout_height="48.0dip" android:visibility="gone"
+					android:text="" android:layout_weight="1.0"/>
+			</LinearLayout>
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

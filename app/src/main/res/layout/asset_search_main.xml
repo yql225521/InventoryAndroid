@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/asset_search_main_Root"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:orientation="vertical" android:id="@+id/asset_search_main_LinearLayout01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_weight="1.0"
+		android:background="@drawable/default_bg">
+		<RelativeLayout android:id="@+id/asset_search_main_RelativeLayout02"
+			android:background="@drawable/ent_search_back" android:paddingTop="11.0dp"
+			android:paddingBottom="35.0dp" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="15.0dp"
+			android:layout_marginTop="25.0dp" android:layout_marginRight="15.0dp">
+			<!-- 企业名称 -->
+			<EditText android:id="@+id/asset_search_main_edit_assetname"
+			 android:paddingLeft="75.0sp"
+				android:saveEnabled="true" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginLeft="5.0dip"
+				android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip"
+				android:layout_marginBottom="5.0dp" android:hint="@string/asset_name"
+				android:maxLength="100" android:layout_alignParentTop="true" android:inputType="text" />
+			<TextView android:textSize="16.0dip" android:textColor="#ff3f3f3f"
+				android:gravity="center_vertical" android:id="@+id/asset_search_main_text04"
+				android:paddingLeft="7.0sp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="15.0sp"
+				android:text="@string/asset_name" android:layout_alignLeft="@+id/asset_search_main_edit_assetname"
+				android:layout_alignTop="@+id/asset_search_main_edit_assetname"
+				android:layout_alignBottom="@+id/asset_search_main_edit_assetname" />
+			<!-- 注册号 -->
+			<EditText android:id="@+id/asset_search_main_edit_assetcode"
+				android:paddingLeft="75.0sp"
+				android:saveEnabled="true" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="1.0dip"
+				android:maxLength="30" android:layout_below="@+id/asset_search_main_edit_assetname"
+				android:layout_alignLeft="@+id/asset_search_main_edit_assetname"
+				android:layout_alignRight="@+id/asset_search_main_edit_assetname"
+				/>
+			<TextView android:textSize="16.0dip" android:textColor="#ff3f3f3f"
+				android:gravity="center_vertical" android:id="@+id/asset_search_main_text03"
+				android:paddingLeft="7.0sp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/asset_code"
+				android:layout_alignTop="@+id/asset_search_main_edit_assetcode"
+				android:layout_alignRight="@+id/asset_search_main_text04"
+				android:layout_alignBottom="@+id/asset_search_main_edit_assetcode" />
+ 
+			<Spinner android:id="@+id/asset_search_main_spinner_organs"
+				android:paddingLeft="75.0sp"
+				android:saveEnabled="true" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="1.0dip"
+				android:maxLength="16" android:layout_below="@+id/asset_search_main_edit_assetcode"
+				android:layout_alignLeft="@+id/asset_search_main_edit_assetcode"
+				android:layout_alignRight="@+id/asset_search_main_edit_assetcode"
+				android:inputType="text" />
+			<TextView android:textSize="16.0dip" android:textColor="#ff3f3f3f"
+				android:gravity="center_vertical" android:id="@+id/asset_search_main_text02"
+				android:paddingLeft="7.0sp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/cf_place"
+				android:layout_alignTop="@+id/asset_search_main_spinner_organs"
+				android:layout_alignRight="@+id/asset_search_main_text04"
+				android:layout_alignBottom="@+id/asset_search_main_spinner_organs" />
+
+			 <Spinner android:id="@+id/asset_search_main_spinner_category"
+				android:paddingLeft="75.0sp" android:saveEnabled="true"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginRight="1.0dip" android:maxLength="16"
+				android:layout_below="@+id/asset_search_main_spinner_organs"
+				android:layout_alignLeft="@+id/asset_search_main_spinner_organs"
+				android:layout_alignRight="@+id/asset_search_main_spinner_organs"/>
+			 
+			<TextView android:textSize="16.0dip" android:textColor="#ff3f3f3f"
+				android:gravity="center_vertical" android:id="@+id/asset_search_main_text01"
+				android:paddingLeft="7.0sp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/category"
+				android:layout_alignTop="@+id/asset_search_main_spinner_category"
+				android:layout_alignRight="@+id/asset_search_main_text04"
+				android:layout_alignBottom="@+id/asset_search_main_spinner_category" 
+				android:layout_marginBottom="4dp"/>
+			
+			 <Spinner android:id="@+id/asset_search_main_spinner_starnum1"
+				android:paddingLeft="75.0sp" android:saveEnabled="true"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginRight="1.0dip" android:maxLength="16"
+				android:layout_below="@+id/asset_search_main_spinner_category"
+				android:layout_alignLeft="@+id/asset_search_main_spinner_category"
+				android:layout_alignRight="@+id/asset_search_main_spinner_category"/>
+			 
+			<TextView android:textSize="16.0dip" android:textColor="#ff3f3f3f"
+				android:gravity="center_vertical" android:id="@+id/asset_search_main_spinner_starcategorytext"
+				android:paddingLeft="7.0sp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/starNum1"
+				android:layout_alignTop="@+id/asset_search_main_spinner_starnum1"
+				android:layout_alignRight="@+id/asset_search_main_text04"
+				android:layout_alignBottom="@+id/asset_search_main_spinner_starnum1" 
+				android:layout_marginBottom="4dp"/>
+			
+			 <Spinner android:id="@+id/asset_search_main_spinner_starnum2"
+				android:paddingLeft="75.0sp" android:saveEnabled="true"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginRight="1.0dip" android:maxLength="16" 
+				android:layout_below="@+id/asset_search_main_spinner_starnum1"
+				android:layout_alignLeft="@+id/asset_search_main_spinner_starnum1"
+				android:layout_alignRight="@+id/asset_search_main_spinner_starnum1"/>
+			 
+			<TextView android:textSize="16.0dip" android:textColor="#ff3f3f3f"
+				android:gravity="center_vertical" android:id="@+id/asset_search_main_spinner_starnumtext2"
+				android:paddingLeft="7.0sp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/starNum2"
+				android:layout_alignTop="@+id/asset_search_main_spinner_starnum2"
+				android:layout_alignRight="@+id/asset_search_main_text04"
+				android:layout_alignBottom="@+id/asset_search_main_spinner_starnum2" 
+				android:layout_marginBottom="4dp"/>
+			
+ 
+			<Button android:id="@+id/asset_search_main_searchbtn" android:layout_width="130.0dp"
+				android:layout_height="42.0dp" android:layout_marginTop="7.0dp"
+				android:layout_marginRight="12.0dip" 
+				android:text="@string/strSearch"
+				android:layout_below="@+id/asset_search_main_spinner_starnumtext2"
+				android:layout_alignParentRight="true"/>
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

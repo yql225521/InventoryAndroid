@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ent_search_main_Root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fs_serter_search_main_LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_bg"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/fs_serter_search_main_LinearLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15.0dp"
+            android:layout_marginRight="15.0dp"
+            android:layout_marginTop="25.0dp"
+            android:background="@drawable/login_back"
+            android:orientation="vertical"
+            android:paddingBottom="30.0dp"
+            android:paddingTop="5.0dp" >
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/fs_serter_search_main_RelativeLayout02"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                 
+                
+      			<TextView
+      			    android:id="@+id/data_organ_label"
+      			    android:layout_width="wrap_content"
+      			    android:layout_height="wrap_content"
+      			    android:layout_alignBottom="@+id/data_organ_info"
+      			    android:layout_alignTop="@+id/data_organ_info"
+      			    android:layout_marginRight="15.0sp"
+      			    
+      			    android:gravity="center_vertical"
+      			    android:paddingLeft="7.0sp"
+      			    android:text="@string/strDataOrgan"
+      			    android:textColor="#ff3f3f3f"
+      			    android:textSize="16.0dip" />
+      			
+      			
+      			<TextView
+      			    android:id="@+id/data_organ_info"
+      			    android:layout_width="fill_parent"
+      			    android:layout_height="wrap_content"
+      			    android:layout_toRightOf="@+id/data_organ_label"
+      			    android:layout_marginRight="15.0sp"
+      			    android:layout_marginTop="25.0sp"
+      			    android:gravity="center_vertical"
+      			    android:textColor="#ff3f3f3f"
+      			    android:textSize="16.0dip" />
+      			
+      			
+      			<TextView
+      			    android:id="@+id/data_date_info"
+      			    android:layout_width="fill_parent"
+      			    android:layout_height="wrap_content"
+      			    android:layout_below="@+id/data_organ_info"
+      			    android:layout_alignLeft="@+id/data_organ_info"
+               		android:layout_alignRight="@+id/data_organ_info"
+      			    android:layout_marginTop="10.0sp"
+      			    android:gravity="center_vertical"
+      			    android:textColor="#ff3f3f3f"
+      			    android:textSize="16.0dip" />
+      			
+ 
+      			
+      			<TextView
+      			    android:id="@+id/data_date_label"
+      			    android:layout_width="wrap_content"
+      			    android:layout_height="wrap_content"
+      			    android:layout_alignBottom="@+id/data_date_info"
+      			    android:layout_alignTop="@+id/data_date_info" 
+      			    android:layout_alignLeft="@+id/data_organ_label"
+               		android:layout_alignRight="@+id/data_organ_label"
+      			    
+      			    android:gravity="center_vertical"
+      			    android:paddingLeft="7.0sp"
+      			    android:text="@string/strDataTime"
+      			    android:textColor="#ff3f3f3f"
+      			    android:textSize="16.0dip" />
+                
+                <Button
+                    android:id="@+id/offline_qty_btn_download"
+                    android:layout_width="180.0dp"
+                    android:layout_height="42.0dp"
+                    android:layout_below="@+id/data_date_info"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10.0sp"
+                    android:text="@string/dataDownload" />
+
+
+
+            </RelativeLayout> 
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

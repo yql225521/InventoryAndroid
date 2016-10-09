@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ent_search_main_Root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fs_serter_search_main_LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@drawable/default_bg"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/fs_serter_search_main_RelativeLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15.0dp"
+            android:layout_marginRight="15.0dp"
+            android:layout_marginTop="25.0dp"
+            android:background="@drawable/login_back"
+            android:paddingBottom="40.0dp"
+            android:paddingTop="5.0dp" >
+            
+            <Spinner
+			    android:id="@+id/asset_pd_organs"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="5.0dip"
+			    android:layout_marginRight="5.0dip"
+			    android:layout_marginTop="5.0dip"
+			    android:layout_alignParentTop="true"
+			    android:paddingLeft="75.0sp"
+			    android:maxLength="16"
+			    android:saveEnabled="true" />
+            
+			<TextView android:textSize="16.0dip" android:textColor="#ff3f3f3f"
+				android:gravity="center_vertical" android:id="@+id/ent_search_main_text04"
+				android:paddingLeft="7.0sp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/asset_organ"
+				android:layout_alignTop="@+id/asset_pd_organs"
+				android:layout_alignLeft="@+id/asset_pd_organs"
+				android:layout_alignBottom="@+id/asset_pd_organs" 
+				android:layout_marginRight="15.0sp"/>
+			
+			<LinearLayout
+                android:id="@+id/fs_serter_search_main_LinearLayout03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/asset_pd_organs"
+                android:layout_below="@+id/asset_pd_organs"
+                android:layout_alignRight="@+id/asset_pd_organs"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/fs_serter_search_main_btn_scan"
+                     android:layout_width="fill_parent"
+                    android:layout_height="42.0dp"
+					android:layout_weight="1"
+                    android:text="@string/strScan" />
+
+                <Button
+                    android:id="@+id/fs_serter_search_main_btn_inventory"
+                     android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="42.0dp"
+                    android:text="@string/inventory_info1" />
+
+                <Button
+                    android:id="@+id/fs_serter_search_main_btn_manaul"
+                     android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="42.0dp"
+                    android:text="@string/manualInput1" />
+
+                <Button
+                    android:id="@+id/fs_serter_search_main_btn_end"
+                     android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="42.0dp"
+                    android:text="@string/strEnd" />
+            </LinearLayout>
+            
+             <com.gystudio.widget.CornerListView
+                android:id="@+id/asset_pd_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:layout_alignLeft="@+id/asset_pd_organs"
+                android:layout_below="@+id/fs_serter_search_main_LinearLayout03"
+                android:layout_marginTop="5.0dp"
+                android:layout_marginLeft="5.0dip"
+			    android:layout_marginRight="5.0dip"
+                android:layout_marginBottom="5.0dp"
+                android:background="@drawable/app_list_corner_border"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_bg"
+    tools:context=".activity.Main" >
+
+    <ImageView
+        android:id="@+id/main_logo_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/logo_asset"
+        android:gravity="center_horizontal" />
+
+    <com.gystudio.widget.SlipViewGroup
+        android:id="@+id/slip_viewGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/main_logo_icon"
+        android:visibility="gone" >
+    </com.gystudio.widget.SlipViewGroup>
+
+    <LinearLayout
+        android:id="@+id/screen_position_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/screen_position_bg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_no_date"
+        style="@style/list_search_no_data_text"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

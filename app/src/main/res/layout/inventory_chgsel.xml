@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ent_search_main_Root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fs_serter_search_main_LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_bg"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/fs_serter_search_main_LinearLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15.0dp"
+            android:layout_marginRight="15.0dp"
+            android:layout_marginTop="25.0dp"
+            android:background="@drawable/login_back"
+            android:orientation="vertical"
+            android:paddingBottom="40.0dp"
+            android:paddingTop="5.0dp" >
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/fs_serter_search_main_RelativeLayout02"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+
+
+               			<TextView
+               			    android:id="@+id/asset_search_main_text03"
+               			    android:layout_width="wrap_content"
+               			    android:layout_height="wrap_content"
+               			    android:layout_alignBottom="@+id/asset_manual_edit_assetcode"
+               			    android:layout_alignTop="@+id/asset_manual_edit_assetcode"
+               			    android:layout_marginRight="15.0sp"
+               			    
+               			    android:gravity="center_vertical"
+               			    android:paddingLeft="7.0sp"
+               			    android:text="@string/asset_code"
+               			    android:textColor="#ff3f3f3f"
+               			    android:textSize="16.0dip" />
+               			
+               			
+               			<TextView
+               			    android:id="@+id/asset_manual_edit_assetcode"
+               			    android:layout_width="fill_parent"
+               			    android:layout_height="wrap_content"
+               			    android:layout_toRightOf="@+id/asset_search_main_text03"
+               			    android:layout_marginRight="15.0sp"
+               			    android:layout_marginTop="10.0sp"
+               			    android:gravity="center_vertical"
+               			    android:textColor="#ff3f3f3f"
+               			    android:textSize="16.0dip" />
+               			
+               			<!-- 企业名称 -->
+
+               			<TextView
+               			    android:id="@+id/asset_manual_edit_assetname"
+               			    android:layout_width="wrap_content"
+               			    android:layout_height="wrap_content"
+               			    android:layout_alignLeft="@+id/asset_manual_edit_assetcode"
+               			    android:layout_alignRight="@+id/asset_manual_edit_assetcode"
+               			    android:layout_below="@+id/asset_manual_edit_assetcode"
+               			    android:layout_marginTop="5.0sp"
+               			    android:textColor="#ff3f3f3f"
+               			    android:textSize="16.0dip" 
+						/>
+
+               			<TextView
+               			    android:id="@+id/asset_search_main_text04"
+               			    android:layout_width="wrap_content"
+               			    android:layout_height="wrap_content"
+               			    android:layout_alignBottom="@+id/asset_manual_edit_assetname"
+               			    android:layout_alignLeft="@+id/asset_search_main_text03"
+               			    android:layout_alignRight="@+id/asset_search_main_text03"
+               			    android:layout_alignTop="@+id/asset_manual_edit_assetname"
+               			    android:gravity="center_vertical"
+               			    android:paddingLeft="7.0sp"
+               			    android:text="@string/asset_name"
+               			    android:textColor="#ff3f3f3f"
+               			    android:textSize="16.0dip" />
+
+                <com.gystudio.widget.CornerListView
+                    android:id="@+id/data_manager_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+ 					android:layout_below="@+id/asset_manual_edit_assetname"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:layout_marginBottom="5.0dp"
+                    android:background="@drawable/app_list_corner_border"
+                  />
+            </RelativeLayout> 
+
+		    <LinearLayout android:orientation="vertical" android:id="@+id/fs_serter_search_main_RelativeLayout04" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp">
+                 <TextView android:textColor="#ff3f3f3f" android:layout_width="wrap_content"  android:paddingLeft="3.0sp" android:layout_height="wrap_content" android:text="@string/asset_star" />
+		         <RatingBar
+			        android:id="@+id/room_ratingbar"
+			        style="@style/roomRatingBar"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			          android:numStars="5"
+			         android:rating="0"
+			        android:layout_marginLeft="10sp" >
+			    </RatingBar>
+		    </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/fs_serter_search_main_RelativeLayout03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp">
+                <TextView android:textColor="#ff3f3f3f" android:layout_width="wrap_content"  android:paddingLeft="3.0sp" android:layout_height="wrap_content" android:text="@string/inv_note" />
+                <EditText android:textSize="16.0dip"   android:gravity="top" android:id="@+id/inv_note"   android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="5.0dp" android:hint="@string/inv_note_hint" android:maxLength="50" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fs_serter_search_main_LinearLayout03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_marginTop="15.0dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/strOK" />
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/strCancel" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

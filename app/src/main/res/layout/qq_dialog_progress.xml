@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/qq_dialog_root"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:gravity="center_vertical"
+		android:id="@+id/qqdialog_top_pane" android:background="@drawable/qqdialog_bg_top"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<ImageView android:id="@+id/qq_dialog_icon"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/qq_dialog_default_icon" />
+		<TextView android:textColor="@android:color/black"
+			android:id="@+id/qq_dialog_title" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="提示" />
+	</LinearLayout>
+	<LinearLayout android:id="@+id/qq_dialog_bottom_viewgroup"
+		android:background="@drawable/qqdialog_bg_bottom"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<RelativeLayout android:id="@+id/RelativeLayout01"
+			android:layout_width="fill_parent" android:layout_height="fill_parent" >
+			<TextView android:textColor="#ffffffff" android:id="@+id/qq_dialog_msg_id"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="20.0dip" android:layout_marginTop="18.0dip"
+				android:layout_marginBottom="18.0dip" android:text="" />
+			<TextView android:textColor="#ffffffff" android:id="@+id/qq_dialog_msg_progress"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="190.0dip" android:layout_marginTop="50.0dip"
+				android:text="" />
+			<ProgressBar android:id="@+id/qq_dialog_progressBar"
+				android:layout_width="160.0dip" android:layout_height="wrap_content"
+				android:layout_marginLeft="20.0dip" android:layout_marginTop="50.0dip"
+				android:progress="0" />
+			<View android:id="@+id/line" android:background="@drawable/widget_line"
+				android:layout_width="fill_parent" android:layout_height="1.0px"
+				android:layout_marginBottom="5.0px" android:layout_below="@id/qq_dialog_msg_id" />
+			<LinearLayout android:gravity="center" android:id="@+id/btn_pane"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@id/line">
+				<Button android:id="@+id/qq_dialog_ok_btn_id"
+					android:layout_width="130.0px" android:layout_height="48.0dip"
+					android:text="" />
+				<Button android:id="@+id/qq_dialog_cancel_btn_id"
+					android:layout_width="130.0px" android:layout_height="48.0dip"
+					android:text="" />
+			</LinearLayout>
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

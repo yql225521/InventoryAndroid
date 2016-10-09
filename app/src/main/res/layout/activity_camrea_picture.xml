@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ent_search_main_Root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fs_serter_search_main_LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_bg"
+        android:orientation="vertical" >
+        
+        
+        <LinearLayout
+            android:id="@+id/fs_serter_search_main_LinearLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15.0dp"
+            android:layout_marginRight="15.0dp"
+            android:layout_marginTop="25.0dp"
+            android:background="@drawable/login_back"
+            android:orientation="vertical"
+            android:paddingBottom="40.0dp"
+            android:paddingTop="5.0dp" >
+			 <LinearLayout
+                android:id="@+id/fs_serter_search_main_LinearLayout04"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal" > 
+			    <Button
+                    android:id="@+id/btn_album"
+                     android:layout_width="wrap_content"
+                    android:layout_height="42.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/strPhotoalbum" />
+                <Button
+                    android:id="@+id/btn_camera"
+                     android:layout_width="wrap_content"
+                    android:layout_height="42.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/strPhotocamera" /> 
+                
+                </LinearLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/fs_serter_search_main_RelativeLayout02"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" > 
+  				<ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:layout_marginBottom="5.0dp"
+                android:layout_centerHorizontal="true" 
+                android:scaleType="fitCenter"
+                android:src="@drawable/zwtp" /> 
+            </RelativeLayout> 
+            <LinearLayout
+                android:id="@+id/fs_serter_search_main_LinearLayout03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal" >
+  				<Button
+                    android:id="@+id/photo_sel_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/strOK" />
+  				 <Button
+                    android:id="@+id/scan_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/strBack" />
+  				</LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

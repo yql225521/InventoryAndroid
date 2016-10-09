@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ent_search_main_Root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fs_serter_search_main_LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_bg"
+        android:orientation="vertical" > 
+        <LinearLayout
+            android:id="@+id/fs_serter_search_main_LinearLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15.0dp"
+            android:layout_marginRight="15.0dp"
+            android:layout_marginTop="25.0dp"
+            android:background="@drawable/login_back"
+            android:orientation="vertical"
+            android:paddingBottom="40.0dp"
+            android:paddingTop="5.0dp" >
+			 <LinearLayout
+                android:id="@+id/fs_serter_search_main_LinearLayout04"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal" > 
+			    <Button
+                    android:id="@+id/scan_photo_btn"
+                     android:layout_width="wrap_content"
+                    android:layout_height="42.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/strScan" />
+                <Button
+                    android:id="@+id/scan_upload_btn"
+                     android:layout_width="wrap_content"
+                    android:layout_height="42.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/strPhotoUpload" />
+
+                <Button
+                    android:id="@+id/scan_delete_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/photoDelete" />
+                </LinearLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/fs_serter_search_main_RelativeLayout02"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+ 
+
+                <com.gystudio.widget.CornerListView
+                    android:id="@+id/scan_photo_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:layout_marginBottom="5.0dp"
+                    android:background="@drawable/app_list_corner_border" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fs_serter_search_main_LinearLayout03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_allcheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/strAllcheck" />
+
+                <Button
+                    android:id="@+id/btn_reversecheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/strReverseCheck" />
+
+                <Button
+                    android:id="@+id/scan_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/strBack" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

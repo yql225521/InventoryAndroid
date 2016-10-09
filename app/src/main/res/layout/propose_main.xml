@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/ent_search_main_Root"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<LinearLayout
+	    android:id="@+id/fs_serter_search_main_LinearLayout01"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1.0"
+	    android:background="@drawable/default_bg"
+	    android:orientation="vertical" >
+
+	   <RelativeLayout
+	        android:id="@+id/fs_serter_search_main_RelativeLayout02"
+	        android:layout_width="fill_parent"
+	        android:layout_height="400dp"
+	        android:layout_marginLeft="15.0dp"
+	        android:layout_marginRight="15.0dp"
+	        android:layout_marginTop="15.0dp"
+	        android:background="@drawable/login_back"
+	        android:paddingBottom="20.0dp"
+	        android:paddingTop="11.0dp" >
+	        <EditText
+	            android:id="@+id/fs_serter_search_main_edit_barCode"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginBottom="5.0dp"
+	            android:layout_marginLeft="0.0dip"
+	            android:layout_marginRight="0.0dip"
+	            android:layout_marginTop="5.0dip"
+	            android:digits="0123456789"
+	            android:hint="@string/sr_title_tip"
+	            android:inputType="number"
+	            android:maxLength="120"
+	            android:paddingLeft="65.0dp"
+	            android:saveEnabled="true"
+	            android:textSize="16.0sp" >
+	            <requestFocus />
+	        </EditText>
+            
+	        <TextView
+	            android:id="@+id/fs_serter_search_main_text01"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/fs_serter_search_main_edit_barCode"
+	            android:layout_alignLeft="@+id/fs_serter_search_main_edit_barCode"
+	            android:layout_alignTop="@+id/fs_serter_search_main_edit_barCode"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="7.0sp"
+	            android:text="@string/sr_title_tip"
+	            android:textColor="#ff3f3f3f"
+	            android:textSize="16.0sp" />
+
+	        <EditText
+	            android:id="@+id/fs_serter_search_main_edit_batchNum"
+	            android:layout_width="wrap_content"
+	            android:layout_height="240dp"
+	            android:layout_alignLeft="@+id/fs_serter_search_main_edit_barCode"
+	            android:layout_alignRight="@+id/fs_serter_search_main_edit_barCode"
+	            android:layout_below="@+id/fs_serter_search_main_edit_barCode"
+	            android:layout_marginRight="0.0dip"
+	            android:digits="0123456789"
+	            android:hint="@string/propose_context_tip"
+	            android:inputType="textMultiLine"
+	            android:maxLength="120"
+	            android:paddingLeft="65.0dp"
+	            android:saveEnabled="true"
+	            android:textSize="16.0sp" />
+
+	        <Button
+	            android:id="@+id/fs_serter_search_main_btn_scan"
+	            android:layout_width="100.0dp"
+	            android:layout_height="42.0dp"
+				android:layout_marginRight="20dp"
+				android:layout_alignRight="@+id/fs_serter_search_main_edit_batchNum"
+	            android:layout_below="@+id/fs_serter_search_main_edit_batchNum"
+	            android:layout_marginTop="10dp"
+	            android:text="@string/strSubmit" />
+
+
+
+	    </RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

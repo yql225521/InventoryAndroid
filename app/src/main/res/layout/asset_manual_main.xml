@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/asset_search_main_Root"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:orientation="vertical" android:id="@+id/asset_search_main_LinearLayout01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_weight="1.0"
+		android:background="@drawable/default_bg">
+		<RelativeLayout android:id="@+id/asset_search_main_RelativeLayout02"
+			android:background="@drawable/ent_search_back" android:paddingTop="11.0dp"
+			android:paddingBottom="35.0dp" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="15.0dp"
+			android:layout_marginTop="42.0dp" android:layout_marginRight="15.0dp">
+			<!-- 注册号 -->
+			<EditText android:id="@+id/asset_manual_edit_assetcode"
+			 android:paddingLeft="75.0sp"
+				android:saveEnabled="true" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginLeft="5.0dip"
+				android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip"
+				android:layout_marginBottom="5.0dp" android:hint="@string/asset_code"
+				android:maxLength="100" android:layout_alignParentTop="true" android:inputType="text" />
+			<TextView android:textSize="16.0dip" android:textColor="#ff3f3f3f"
+				android:gravity="center_vertical" android:id="@+id/asset_search_main_text03"
+				android:paddingLeft="7.0sp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="15.0sp"
+				android:text="@string/asset_code" android:layout_alignLeft="@+id/asset_manual_edit_assetcode"
+				android:layout_alignTop="@+id/asset_manual_edit_assetcode"
+				android:layout_alignBottom="@+id/asset_manual_edit_assetcode" />
+			<!-- 企业名称 -->
+			<EditText android:id="@+id/asset_manual_edit_assetname"
+				android:paddingLeft="75.0sp"
+				android:hint="@string/asset_name"
+				android:saveEnabled="true" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"  
+				android:maxLength="16" android:layout_below="@+id/asset_manual_edit_assetcode"
+				android:layout_alignLeft="@+id/asset_manual_edit_assetcode"
+				android:layout_alignRight="@+id/asset_manual_edit_assetcode"
+				/>
+			<TextView android:textSize="16.0dip" android:textColor="#ff3f3f3f"
+				android:gravity="center_vertical" android:id="@+id/asset_search_main_text04"
+				android:paddingLeft="7.0sp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/asset_name"
+				android:layout_alignTop="@+id/asset_manual_edit_assetname"
+				android:layout_alignLeft="@+id/asset_search_main_text03"
+				android:layout_alignRight="@+id/asset_search_main_text03"
+				android:layout_alignBottom="@+id/asset_manual_edit_assetname" />
+ 
+			<Button
+			    android:id="@+id/asset_enter_okbtn"
+			    android:layout_width="130.0dp"
+			    android:layout_height="42.0dp"
+			    android:layout_below="@+id/asset_manual_edit_assetname"
+			    android:layout_alignRight="@+id/asset_manual_edit_assetcode"
+			    android:layout_marginTop="7.0dp"
+			    android:text="@string/strOK" />
+			<Button
+			    android:id="@+id/asset_enter_cancelbtn"
+			    android:layout_width="130.0dp"
+			    android:layout_height="42.0dp"
+			    android:layout_below="@+id/asset_manual_edit_assetname"
+			  	android:layout_alignLeft="@+id/asset_manual_edit_assetcode"
+			    android:layout_marginRight="12.0dip"
+			    android:layout_marginTop="7.0dp"
+			    android:text="@string/strCancel" />
+
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <!-- 资产信息 -->
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/titleItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/infoItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 资产详情 -->
+
+    <LinearLayout
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical" > 
+        <Button
+            android:id="@+id/detailItem"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content" 
+            android:text="@string/strDetail" />
+        <Button
+		    android:id="@+id/imagesItem"
+		    android:layout_width="52dp"
+		    android:layout_height="wrap_content"
+		    android:visibility="gone" 
+		    android:text="@string/strImages" />
+
+    </LinearLayout>
+
+</LinearLayout>
